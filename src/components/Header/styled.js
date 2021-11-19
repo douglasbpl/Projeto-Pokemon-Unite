@@ -13,7 +13,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:fixed;
-z-index: 999;
+z-index: 1;
+
 `
 
 export const MenuFixed = styled.nav`
@@ -45,7 +46,7 @@ height:10vh;
     transform: none;
     opacity: 1;
     }
-    }     
+}     
 ul{
     display:flex;
     align-items:center;
