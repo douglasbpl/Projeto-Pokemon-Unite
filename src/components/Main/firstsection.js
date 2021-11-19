@@ -46,25 +46,25 @@ query {
         <S.Cards >
           <img src={first.url} alt="Imagem do Pokemon" />
           <p>{firsttxt}</p>
-          <Link to="/pkminfo"><button>{knowmore}</button></Link>
+          <Link to="/pkm"><button>{knowmore}</button></Link>
         </S.Cards>
 
         <S.Cards >
           <img src={second.url} alt="Imagem do Pokemon" />
           <p>{secondtxt}</p>
-          <Link to="/pkminfo"><button>{knowmore}</button></Link>
+          <Link to="/pkm"><button>{knowmore}</button></Link>
         </S.Cards>
 
         <S.Cards >
           <img src={third.url} alt="Imagem do Pokemon" />
           <p>{thirdtxt}</p>
-          <Link to="/pkminfo"><button>{knowmore}</button></Link>
+          <Link to="/pkm"><button>{knowmore}</button></Link>
         </S.Cards>
 
         <S.Cards >
           <img src={fourth.url} alt="Imagem do Pokemon" />
           <p>{fourthtxt}</p>
-          <Link to="/pkminfo"><button>{knowmore}</button></Link>
+          <Link to="/pkm"><button>{knowmore}</button></Link>
         </S.Cards>
       </S.ContainerCardsPkm>
     </S.ContainerFIrstSection>

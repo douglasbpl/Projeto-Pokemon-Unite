@@ -47,7 +47,7 @@ query {
             <h3>{menu}</h3>
             <ul>
               <li><Link to="#gameplay">{gameplay}</Link></li>
-              <li><Link to="/pkminfo">{infopkm}</Link></li>
+              <li><Link to="/pkm">{infopkm}</Link></li>
               <li><Link to="/mapas">{arenas}</Link></li>
             </ul>
           </div>
@@ -56,10 +56,10 @@ query {
       </S.Container>
       <S.BoxsocialNetwork>
         <ul>
-          <li><a href="https://www.facebook.com/" target="_blank">{facebook}</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank" >{instagram}</a></li>
-          <li><a href="https://github.com/" target="_blank" >{github}</a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank" >{linkedin}</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">{facebook}</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">{instagram}</a></li>
+          <li><a href="https://www.github.com/" target="_blank" rel="noreferrer">{github}</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">{linkedin}</a></li>
         </ul>
       </S.BoxsocialNetwork>
       <S.CopyRight>

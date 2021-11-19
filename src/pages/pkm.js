@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mpsi } from '../dados/mapsinfo';
+import { Pkmi } from '../dados/pkminfo';
 import { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
   `
 
-export default function Mapas() {
+export default function Pkm() {
 
   return (
     <div>
@@ -22,9 +22,7 @@ export default function Mapas() {
        <Helmet>
         <title>Projeto Pokémon Unite</title>
       </Helmet>
-      <Mpsi/>      
+      <Pkmi/>      
     </div>
   )
 }
-
-

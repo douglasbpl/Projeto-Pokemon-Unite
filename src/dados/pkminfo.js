@@ -1,10 +1,10 @@
 import React from 'react'
-import * as S from './style'
+import * as S from '../pages/styled'
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from "gatsby"
 
 
-export default function Pkminfo() {
+export function Pkmi() {
 
   const data = useStaticQuery(graphql`
 query {
@@ -163,7 +163,7 @@ query {
         <S.MenuFixed>
           <ul>
             <Link to="/" ><li>{pk.home}</li></Link>
-            <Link to="/pkminfo"><li>{pk.pokemons}</li></Link>
+            <Link to="/pkm"><li>{pk.pokemons}</li></Link>
             <Link to="/mapas"><li>{pk.arenas}</li></Link>
           </ul>
         </S.MenuFixed>
