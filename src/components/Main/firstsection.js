@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from "gatsby"
 
 
 export default function FirstSection() {
@@ -32,7 +33,7 @@ query {
   }
 `)
 
-  const { pokemons,knowmore, first, firsttxt, second, secondtxt, third, thirdtxt, fourth, fourthtxt } = data.alldata.mainSection1S[0];
+  const { pokemons, knowmore, first, firsttxt, second, secondtxt, third, thirdtxt, fourth, fourthtxt } = data.alldata.mainSection1S[0];
 
 
   return (
@@ -42,28 +43,28 @@ query {
       <h2> {pokemons} </h2>
       <S.ContainerCardsPkm>
 
-        <S.Cards >         
-          <img src={first.url} alt="Imagem do Pokemon" />         
+        <S.Cards >
+          <img src={first.url} alt="Imagem do Pokemon" />
           <p>{firsttxt}</p>
-          <a href="http://localhost:8000/pkminfo"><button>{knowmore}</button></a>
+          <Link to="/pkminfo"><button>{knowmore}</button></Link>
         </S.Cards>
 
         <S.Cards >
           <img src={second.url} alt="Imagem do Pokemon" />
           <p>{secondtxt}</p>
-          <a href="http://localhost:8000/pkminfo"><button>{knowmore}</button></a>
+          <Link to="/pkminfo"><button>{knowmore}</button></Link>
         </S.Cards>
 
         <S.Cards >
           <img src={third.url} alt="Imagem do Pokemon" />
           <p>{thirdtxt}</p>
-          <a href="http://localhost:8000/pkminfo"><button>{knowmore}</button></a>
+          <Link to="/pkminfo"><button>{knowmore}</button></Link>
         </S.Cards>
 
         <S.Cards >
           <img src={fourth.url} alt="Imagem do Pokemon" />
           <p>{fourthtxt}</p>
-          <a href="http://localhost:8000/pkminfo"><button>{knowmore}</button></a>
+          <Link to="/pkminfo"><button>{knowmore}</button></Link>
         </S.Cards>
       </S.ContainerCardsPkm>
     </S.ContainerFIrstSection>

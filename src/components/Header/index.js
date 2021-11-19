@@ -1,8 +1,7 @@
 import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby'
-
-
+import { Link } from "gatsby"
 
 
 export function Header() {
@@ -55,13 +54,13 @@ export function Header() {
         <S.MenuFixed>
           <img src={logoheader.url} alt="Logo Pokemon Unite" />
           <ul>
-            <a href="#home"><li>{home}</li></a>
-            <a href="#Pokémons"><li>{pokemons}</li></a>
-            <a href="#maps"><li>{mapas}</li></a>
-            <a href="#gameplay"><li>{gameplay}</li></a>
-            <a href="#Contatos"><li>{contato}</li></a>
-            <a href="http://localhost:8000/pkminfo"><li>{infopkm}</li></a>
-            <a href="http://localhost:8000/mapas"><li>{infoarena}</li></a>
+            <Link to="#home"><li>{home}</li></Link>
+            <Link to="#Pokémons"><li>{pokemons}</li></Link>
+            <Link to="#maps"><li>{mapas}</li></Link>
+            <Link to="#gameplay"><li>{gameplay}</li></Link>
+            <Link to="#Contatos"><li>{contato}</li></Link>
+            <Link to="/pkminfo"><li>{infopkm}</li></Link>
+            <Link to="/mapas"><li>{infoarena}</li></Link>
           </ul>
         </S.MenuFixed>
       </S.ContainerMenuFixed>
@@ -80,3 +79,5 @@ export function Header() {
     </S.ContainerHeader>
   )
 }
+
+

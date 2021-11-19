@@ -1,7 +1,8 @@
 import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby';
-import styled from "styled-components";
+import { Link } from "gatsby"
+
 
 
 export default function SecondSection() {
@@ -40,13 +41,13 @@ query {
           <h3>{subtitlemaps}</h3>
           <ul>
             <li><S.MarkStyle >
-              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><a href="http://localhost:8000/mapas">{mapone}</a></li>
+              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><Link to="/mapas">{mapone}</Link></li>
             <li><S.MarkStyle >
-              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><a href="http://localhost:8000/mapas">{maptwo}</a></li>
+              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><Link to="/mapas">{maptwo}</Link></li>
             <li><S.MarkStyle >
-              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><a href="http://localhost:8000/mapas">{maptree}</a></li>
+              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><Link to="/mapas">{maptree}</Link></li>
             <li><S.MarkStyle>
-              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><a href="http://localhost:8000/mapas">{mapfour}</a></li>
+              <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><Link to="/mapas">{mapfour}</Link></li>
           </ul>
         </div>
       </S.BoxTTMaps>

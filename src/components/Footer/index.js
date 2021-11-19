@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby'
+import { Link } from "gatsby"
 
 export function Footer() {
 
@@ -37,17 +38,17 @@ query {
           <div>
             <h3>{menu}</h3>
             <ul>
-              <li><a href="#home">{home}</a></li>
-              <li><a href="#Pokémons">{pokemon}</a></li>
-              <li><a href="#maps">{maps}</a></li>
+              <Link to="#home"><li>{home}</li></Link>
+              <Link to="#Pokémons"><li>{pokemon}</li></Link>
+              <Link to="#maps"><li>{maps}</li></Link>
             </ul>
           </div>
           <div >
             <h3>{menu}</h3>
             <ul>
-              <li><a href="#gameplay">{gameplay}</a></li>
-              <li><a href="http://localhost:8000/pkminfo">{infopkm}</a></li>
-              <li><a href="http://localhost:8000/mapas">{arenas}</a></li>
+              <li><Link to="#gameplay">{gameplay}</Link></li>
+              <li><Link to="/pkminfo">{infopkm}</Link></li>
+              <li><Link to="/mapas">{arenas}</Link></li>
             </ul>
           </div>
 

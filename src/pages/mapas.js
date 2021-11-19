@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './style'
 import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from "gatsby"
 
 
 export default function Mapas() {
@@ -81,10 +82,10 @@ export default function Mapas() {
       <S.GlobalStyle />
       <S.ContainerMenuFixed>
         <S.MenuFixed>
-          <ul>
-            <li><S.Link to="/" >{mp.home}</S.Link></li>
-            <li><S.Link to="/pkminfo">{mp.pokemon}</S.Link></li>
-            <li><S.Link to="/mapas">{mp.arenas}</S.Link></li>
+        <ul>
+            <Link to="/" ><li>{mp.home}</li></Link>
+            <Link to="/pkminfo"><li>{mp.pokemon}</li></Link>
+            <Link to="/mapas"><li>{mp.arenas}</li></Link>
           </ul>
         </S.MenuFixed>
       </S.ContainerMenuFixed>

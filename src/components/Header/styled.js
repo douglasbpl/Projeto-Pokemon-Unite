@@ -14,7 +14,6 @@ align-items:center;
 justify-content:center;
 position:fixed;
 z-index: 1;
-
 `
 
 export const MenuFixed = styled.nav`

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from "styled-components"
-import { Link as GatsbyLink } from "gatsby";
+
+
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -30,13 +31,14 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:fixed;
-z-index: 999;
+z-index: 1;
 `
 
 export const MenuFixed = styled.nav`
 display:flex;
 align-items:center;
 justify-content:space-evenly;
+font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 width:100%;
 height:10vh;
 {  animation-name: lightSpeedIn;    
@@ -61,38 +63,34 @@ height:10vh;
     transform: none;
     opacity: 1;
     }
-    }     
+}     
 ul{
     display:flex;
     align-items:center;
     justify-content:space-evenly;
-    width:60%;
+    width:80%;
     height:100%;    
     flex-wrap: wrap;
     list-style:none;
-    font-size:1.5rem;      
+    font-size:1.5rem;   
+    
 }
 li{
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:8px;
+    border-radius:3%;
     min-width:10vw;
-    height:5vh;     
+    height:5vh;       
 }
 li:hover{
     background-color:#242c47;
-    transition:0.5s;  
-img{
-    width:100px;
+    color:gold;    
 }
-`
 
-export const Link = styled(GatsbyLink)`
-color:White;
-text-decoration:none;
-&:hover{
-    color:gold;
+a{
+    text-decoration:none;
+    color:white;
 }
 `
 

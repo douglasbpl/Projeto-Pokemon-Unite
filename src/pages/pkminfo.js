@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './style'
 import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from "gatsby"
 
 
 export default function Pkminfo() {
@@ -161,9 +162,9 @@ query {
       <S.ContainerMenuFixed>
         <S.MenuFixed>
           <ul>
-            <li><S.Link to="/" >{pk.home}</S.Link></li>
-            <li><S.Link to="/pkminfo">{pk.pokemons}</S.Link></li>
-            <li><S.Link to="/mapas">{pk.arenas}</S.Link></li>
+            <Link to="/" ><li>{pk.home}</li></Link>
+            <Link to="/pkminfo"><li>{pk.pokemons}</li></Link>
+            <Link to="/mapas"><li>{pk.arenas}</li></Link>
           </ul>
         </S.MenuFixed>
       </S.ContainerMenuFixed>
@@ -176,7 +177,7 @@ query {
               <S.Cards key={index}>
                 <img src={item.img} alt="Imagem do Pokemon" />
                 <p>{item.name}</p>
-                <a><button>{data.alldata.listpokemons[0].learnmore}</button></a>
+                <a><button>{pk.learnmore}</button></a>
               </S.Cards>
             ))}
 
