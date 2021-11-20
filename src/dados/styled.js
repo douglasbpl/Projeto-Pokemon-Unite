@@ -31,7 +31,7 @@ position:fixed;
 z-index: 1;
 `
 
-export const MenuFixed = styled.nav`
+export const MenuFixedPM = styled.nav`
 display:flex;
 align-items:center;
 justify-content:space-evenly;

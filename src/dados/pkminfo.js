@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from '../pages/styled'
+import * as S from './styled'
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from "gatsby"
 
@@ -160,13 +160,13 @@ query {
     <S.ContainerPkms>
       <S.GlobalStyle />
       <S.ContainerMenuFixed>
-        <S.MenuFixed>
+        <S.MenuFixedPM>
           <ul>
             <Link to="/" ><li>{pk.home}</li></Link>
             <Link to="/pkm"><li>{pk.pokemons}</li></Link>
             <Link to="/mapas"><li>{pk.arenas}</li></Link>
           </ul>
-        </S.MenuFixed>
+        </S.MenuFixedPM>
       </S.ContainerMenuFixed>
       <S.Ttlb>{pk.ttlpkms}</S.Ttlb>
       <S.Sectb>

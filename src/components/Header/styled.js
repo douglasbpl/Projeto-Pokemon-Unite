@@ -17,9 +17,9 @@ z-index: 1;
 `
 
 export const MenuFixed = styled.nav`
-display:flex;
-align-items:center;
-justify-content:space-evenly;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
 font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 width:100%;
 height:10vh;

@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from '../pages/styled'
+import * as S from './styled'
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from "gatsby"
 
@@ -81,13 +81,13 @@ export function Mpsi() {
     <S.ContainerMapas>
       <S.GlobalStyle />
       <S.ContainerMenuFixed>
-        <S.MenuFixed>
+        <S.MenuFixedPM>
         <ul>
             <Link to="/" ><li>{mp.home}</li></Link>
             <Link to="/pkm"><li>{mp.pokemon}</li></Link>
             <Link to="/mapas"><li>{mp.arenas}</li></Link>
           </ul>
-        </S.MenuFixed>
+        </S.MenuFixedPM>
       </S.ContainerMenuFixed>
       <S.MapTtlb>{mp.ttlarenas} </S.MapTtlb>
 

@@ -197,19 +197,7 @@ let info = [
         VideoMoveSix: "https://www.pokemonunite.gg/res/vid/807_006.mp4",
         UniteMove: " PLASMA GALE : Deal damage to all opponents in an area, displacing them. While inside the plasma zone, you gain increased Attack Range and Damage.",
         VideoUniteMove: "https://www.pokemonunite.gg/res/vid/807_007.mp4"
-    },
-    {
-    }
-
-
-
-
-
-
-
-
-
-
+    },  
 
 ]
 
