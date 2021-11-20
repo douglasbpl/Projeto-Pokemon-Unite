@@ -48,7 +48,6 @@ export function Header() {
   const { logoheader, pokemons, contato, home, mapas, infopkm, infoarena, gameplay, titlepkmunite, subtitlepkmunite, prgpkmunite, btnswitch, btapplestore, btplaystore, backgroundimgheader } = data.alldata.headers[0];
 
   return (
-
     <S.ContainerHeader id="home">
       <S.ContainerMenuFixed>
         <S.MenuFixed>

@@ -5,7 +5,7 @@ module.exports = {
   },
   plugins: ["gatsby-plugin-styled-components"],
   plugins: [`gatsby-plugin-react-helmet`],
-  plugins: [ {
+   plugins: [ {
       resolve: "gatsby-source-graphql",
       options: {
                 typeName: "alldata",

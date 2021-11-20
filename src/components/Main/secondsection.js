@@ -32,8 +32,6 @@ query {
   const { titlemaps, subtitlemaps, mapone, maptwo, maptree, mapfour, backgroundmap, liststyled } = data.alldata.mainSection2S[0];
 
   return (
-
-
     <S.ContainerSecondSection id="maps" backgroundss={backgroundmap.url}>
       <S.BoxTTMaps>
         <div>
@@ -50,11 +48,7 @@ query {
               <img src={liststyled.url} alt="bolinha do marcador" /></S.MarkStyle><Link to="/mapas">{mapfour}</Link></li>
           </ul>
         </div>
-      </S.BoxTTMaps>
-
-      {/* <S.BoxContainerMaps>
-        <img src={backgroundmap.url} />
-      </S.BoxContainerMaps> */}
+      </S.BoxTTMaps>   
     </S.ContainerSecondSection>
   )
 

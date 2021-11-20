@@ -177,7 +177,7 @@ query {
               <S.Cards key={index}>
                 <img src={item.img} alt="Imagem do Pokemon" />
                 <p>{item.name}</p>
-                <a><button>{pk.learnmore}<Link to="/moves"></Link></button></a>
+                <Link to="#"><button>{pk.learnmore}</button></Link>
               </S.Cards>
             ))}
 

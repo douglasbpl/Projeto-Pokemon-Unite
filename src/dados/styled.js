@@ -38,11 +38,11 @@ justify-content:space-evenly;
 font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 width:100%;
 height:10vh;
-{  animation-name: lightSpeedIn;    
+{  
+    animation-name: lightSpeedIn;  
     animation-timing-function: ease-out;
-     animation-duration: 1s;
-     animation-fill-mode: both;
-    }
+    animation-duration: 1s;
+    animation-fill-mode: both;      
     @keyframes lightSpeedIn {
     0% {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -69,8 +69,7 @@ ul{
     height:100%;    
     flex-wrap: wrap;
     list-style:none;
-    font-size:1.5rem;   
-    
+    font-size:1.5rem;       
 }
 li{
     display:flex;
@@ -84,7 +83,6 @@ li:hover{
     background-color:#242c47;
     color:gold;    
 }
-
 a{
     text-decoration:none;
     color:white;
@@ -100,13 +98,13 @@ padding-top:10vh;
 
 export const Sectb = styled.section`
 display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 70%;
-  min-height: 100vh;
-  background-color: gray;
- `
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+width: 70%;
+min-height: 100vh;
+background-color: gray;
+`
 
 export const ContainerBoxCardsPkm = styled.section`
  background-color: #271d45;;
@@ -119,7 +117,7 @@ export const ContainerBoxCardsPkm = styled.section`
  h2{
      color: white;
      font-size: 2.5rem;
- }
+}
  `
 export const ContainerCardsPkm = styled.div`
 display:flex;
@@ -154,7 +152,7 @@ border-radius: 10px;
   transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-  }  
+}  
 p{
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -199,7 +197,7 @@ img{
   100% {
   transform: scale3d(1, 1, 1);
   }
-  }
+}
   `
 
 export const ContainerMapas = styled.div`
@@ -220,14 +218,14 @@ padding-top:10vh;
 
 export const SectbMaps = styled.section`
 display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 90%;
-  min-height: 100vh;
-  background-color: #271d45;
-  font: 300 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
- `
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+width: 90%;
+min-height: 100vh;
+background-color: #271d45;
+font: 300 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+`
 
 export const CardsMaps = styled.div`
 display: flex;
@@ -246,7 +244,7 @@ p{
 img{
     width: 100%;
     height:50%;
-  }
+}
 {
   animation-name: zoomInDown;
   animation-duration: 1s;

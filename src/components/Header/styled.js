@@ -26,8 +26,7 @@ height:10vh;
 {  animation-name: lightSpeedIn;    
     animation-timing-function: ease-out;
      animation-duration: 1s;
-     animation-fill-mode: both;
-    }
+     animation-fill-mode: both;    
     @keyframes lightSpeedIn {
     0% {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -125,31 +124,30 @@ opacity:0.7;
 margin-left:20px;
 flex-wrap:wrap;
 font: 400 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-{  
+    {
+    animation-name: swing;   
     transform-origin: top center;
-        origin: top center;
-        transform-origin: top center;
-        animation-name: swing;
-        animation-duration: 1.5s;        
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
+    origin: top center;    
+    animation-duration: 1.5s;        
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    }
+    @keyframes swing {
+    20% {
+    transform: rotate3d(0, 0, 1, 15deg);        
+    }
+    40% {
+    transform: rotate3d(0, 0, 1, -10deg);        
         }
-        @keyframes swing {
-        20% {
-        transform: rotate3d(0, 0, 1, 15deg);        
+    60% {
+    transform: rotate3d(0, 0, 1, 5deg);        
         }
-        40% {
-        transform: rotate3d(0, 0, 1, -10deg);        
-        }
-        60% {
-        transform: rotate3d(0, 0, 1, 5deg);        
-        }
-        80% {
+    80% {
         transform: rotate3d(0, 0, 1, -5deg);        
         }
-        100% {
+    100% {
         transform: rotate3d(0, 0, 1, 0deg);      
-        }    
+    }    
 }
 &:hover{
     animation: ${keyframes`
