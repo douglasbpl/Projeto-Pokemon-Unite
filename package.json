@@ -13,7 +13,6 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
-    
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",

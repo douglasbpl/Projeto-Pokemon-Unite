@@ -77,12 +77,13 @@ export function Mpsi() {
       txt: mp.txtsc
     }
   ]
+
   return (
     <S.ContainerMapas>
-      <S.GlobalStyle />
+      <S.GlobalStyle />      
       <S.ContainerMenuFixed>
         <S.MenuFixedPM>
-        <ul>
+          <ul>
             <Link to="/" ><li>{mp.home}</li></Link>
             <Link to="/pkm"><li>{mp.pokemon}</li></Link>
             <Link to="/mapas"><li>{mp.arenas}</li></Link>
@@ -90,9 +91,8 @@ export function Mpsi() {
         </S.MenuFixedPM>
       </S.ContainerMenuFixed>
       <S.MapTtlb>{mp.ttlarenas} </S.MapTtlb>
-
+      
       <S.SectbMaps >
-
         {mapas.map((item, index) => (
           <S.CardsMaps key={index}>
             <img src={item.img} alt="Imagem do Mapa" />
