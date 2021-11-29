@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Pokemon Unite",
-  "author": "douglasbpl",
-  "main": "index.js",
+  "author": "douglasbpl",  
   "keywords": [
     "gatsby"
   ],
@@ -26,6 +25,7 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
+    "resolve-url": "^0.2.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "update": "^0.7.4"
