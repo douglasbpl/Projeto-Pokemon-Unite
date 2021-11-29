@@ -6,6 +6,14 @@ module.exports = {
   plugins: ["gatsby-plugin-styled-components"],
   plugins: [`gatsby-plugin-react-helmet`],
   plugins: ['gatsby-plugin-netlify'],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    }
+  ],
    plugins: [ {
       resolve: "gatsby-source-graphql",
       options: {
