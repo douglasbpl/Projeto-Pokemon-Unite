@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 
 export const ContainerMain = styled.div`
@@ -40,23 +40,7 @@ background-color: aliceblue;
 width: 250px;
 max-height: 300px;
 border-radius: 10px;
-{
-  animation-name: zoomInDown;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  }
-  @keyframes zoomInDown {
-  0% {
-  opacity: 0;
-  transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
-  60% {
-  opacity: 1;
-  transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  }
-  } 
+
 p{
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -75,34 +59,7 @@ img{
     width: 100%;
     height: 60%;    
   }
-&:hover{  
-  animation-name: rubberBand;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  }
-  @keyframes rubberBand {
-  0% {
-  transform: scale3d(1, 1, 1);
-   }
-  30% {
-  transform: scale3d(1.25, 0.75, 1);
-   }
-  40% {
-  transform: scale3d(0.75, 1.25, 1);
-   }
-  50% {
-  transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-  transform: scale3d(.95, 1.05, 1);
-   }
-  75% {
-  transform: scale3d(1.05, .95, 1);
-   }
-  100% {
-  transform: scale3d(1, 1, 1);
-  }
-  } 
+
 `
 
 export const ContainerSecondSection = styled.section`
@@ -126,33 +83,7 @@ opacity:0.5;
 height: 50%;
 border-radius: 10%;
 font: 400 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-position:relative; 
-animation: ${keyframes`
-0% { 
-    left: 0px;
-    transform: rotate(0deg);  
-}
-25% {
-    left: 65%;    
- }
-50% {
-    left: 0px;
-    transform: rotate(0deg);
-}
-75% { 
-    left: 65%;    
-}
-100% {
-    left: 0px;    
-}
-`} 15s ease-in-out 1s infinite normal both;
-&:hover{
-    animation: ${keyframes`
-    0% {        
-    }    
-    100% {  
-    `}
-    }
+
 div {
     display: flex;
     flex-direction: column;
@@ -248,55 +179,11 @@ align-items: center;
 margin: 15px;
 width: 400px;
 max-height: 300px;
-{
-    animation-name: zoomInDown;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    }
-    @keyframes zoomInDown {
-    0% {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    }
-    60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    }
-    }    
+   
 video
      {
         height: 100%;
         width: 100%;   
-    }
-    &:hover{  
-        animation-name: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        }
-        @keyframes rubberBand {
-        0% {
-        transform: scale3d(1, 1, 1);        
-        }
-        30% {
-        transform: scale3d(1.25, 0.75, 1);        
-        }
-        40% {
-        transform: scale3d(0.75, 1.25, 1);       
-        }
-        50% {
-        transform: scale3d(1.15, 0.85, 1);
-                }
-        65% {
-        transform: scale3d(.95, 1.05, 1);        
-        }
-        75% {
-        transform: scale3d(1.05, .95, 1);       
-        }
-        100% {
-        transform: scale3d(1, 1, 1);       
-        }
-        }
+    }    
                                 
 `
