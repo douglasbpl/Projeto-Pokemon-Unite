@@ -46,14 +46,7 @@ display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px 0;  
-  }
-  a{    
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;    
-  }
-  a:hover{
-    color: gold;
-  }
+  }  
   h3 {
     font-size: 25px;
   }

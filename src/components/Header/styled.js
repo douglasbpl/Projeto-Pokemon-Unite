@@ -69,10 +69,6 @@ li:hover{
     color:gold;    
 }
 
-a{
-    text-decoration:none;
-    color:white;
-}
 img{
     width:100px;
         transform-origin: top center;
