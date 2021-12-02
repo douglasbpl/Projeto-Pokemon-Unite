@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby'
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 
 export function Footer() {
 
@@ -39,15 +39,15 @@ query {
           <div>
             <h3>{menu}</h3>
             <ul>
-              <li><AnchorLink to="/#home">{home}</AnchorLink></li>
-              <li><AnchorLink to="/#Pokémons">{pokemon}</AnchorLink></li>
-              <li><AnchorLink to="/#maps">{maps}</AnchorLink></li>
+              <li><Link to="/#home">{home}</Link></li>
+              <li><Link to="/#Pokémons">{pokemon}</Link></li>
+              <li><Link to="/#maps">{maps}</Link></li>
             </ul>
           </div>
           <div >
             <h3>{menu}</h3>
             <ul>
-              <li><AnchorLink to="/#gameplay">{gameplay}</AnchorLink></li>
+              <li><Link to="/#gameplay">{gameplay}</Link></li>
               <li><Link to="/pkm">{infopkm}</Link></li>
               <li><Link to="/mapas">{arenas}</Link></li>
             </ul>

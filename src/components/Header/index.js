@@ -2,8 +2,6 @@ import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby'
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-
 
 
 
@@ -56,11 +54,11 @@ export function Header() {
         <S.MenuFixed>
           <img src={logoheader.url} alt="Logo Pokemon Unite" />
           <ul>
-            <li><AnchorLink to="/#home">{home}</AnchorLink></li>
-            <li><AnchorLink to="/#Pokémons">{pokemons}</AnchorLink></li>
-            <li><AnchorLink to="/#maps">{mapas}</AnchorLink></li>
-            <li><AnchorLink to="/#gameplay">{gameplay}</AnchorLink></li>
-            <AnchorLink to="/#Contatos"><li>{contato}</li></AnchorLink>
+            <li><Link to="/#home">{home}</Link></li>
+            <li><Link to="/#Pokémons">{pokemons}</Link></li>
+            <li><Link to="/#maps">{mapas}</Link></li>
+            <li><Link to="/#gameplay">{gameplay}</Link></li>
+            <Link to="/#Contatos"><li>{contato}</li></Link>
             <li><Link to="/pkm">{infopkm}</Link></li>
             <li><Link to="/mapas">{infoarena}</Link></li>
           </ul>
