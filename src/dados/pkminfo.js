@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './styled'
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 
 
 export function Pkmi() {
@@ -178,7 +178,7 @@ query {
               <S.Cards key={index}>
                 <img src={item.img} alt="Imagem do Pokemon" />
                 <p>{item.name}</p>
-                <AnchorLink  to="/"><button>{pk.learnmore}</button></AnchorLink >
+                <button><Link  to="/">{pk.learnmore}</Link></button>
               </S.Cards>
             ))}
 
