@@ -84,9 +84,9 @@ export function Mpsi() {
       <S.ContainerMenuFixed>
         <S.MenuFixedPM>
           <ul>
-            <li><Link to="/" >{mp.home}</Link></li>
-            <li><Link to="/pkm">{mp.pokemon}</Link></li>
-            <li><Link to="/mapas">{mp.arenas}</Link></li>
+            <Link to="/" ><li>{mp.home}</li></Link>
+            <Link to="/pkm"><li>{mp.pokemon}</li></Link>
+            <Link to="/mapas"><li>{mp.arenas}</li></Link>
           </ul>
         </S.MenuFixedPM>
       </S.ContainerMenuFixed>

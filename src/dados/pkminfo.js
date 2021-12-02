@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './styled'
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from "gatsby"
-
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 export function Pkmi() {
@@ -163,9 +163,9 @@ query {
       <S.ContainerMenuFixed>
         <S.MenuFixedPM>
           <ul>
-            <li><Link to="/" >{pk.home}</Link></li>
-            <li><Link to="/pkm">{pk.pokemons}</Link></li>
-            <li><Link to="/mapas">{pk.arenas}</Link></li>
+            <Link to="/" ><li>{pk.home}</li></Link>
+            <Link to="/pkm"><li>{pk.pokemons}</li></Link>
+            <Link to="/mapas"><li>{pk.arenas}</li></Link>
           </ul>
         </S.MenuFixedPM>
       </S.ContainerMenuFixed>
@@ -178,7 +178,7 @@ query {
               <S.Cards key={index}>
                 <img src={item.img} alt="Imagem do Pokemon" />
                 <p>{item.name}</p>
-                <button><Link  to="/">{pk.learnmore}</Link></button>
+                <AnchorLink  to="/"><button>{pk.learnmore}</button></AnchorLink >
               </S.Cards>
             ))}
 
