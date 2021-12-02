@@ -39,9 +39,9 @@ query {
           <div>
             <h3>{menu}</h3>
             <ul>
-              <AnchorLink to="/#home"><li>{home}</li></AnchorLink>
-              <AnchorLink to="/#Pokémons"><li>{pokemon}</li></AnchorLink>
-              <AnchorLink to="/#maps"><li>{maps}</li></AnchorLink>
+              <li><AnchorLink to="/#home">{home}</AnchorLink></li>
+              <li><AnchorLink to="/#Pokémons">{pokemon}</AnchorLink></li>
+              <li><AnchorLink to="/#maps">{maps}</AnchorLink></li>
             </ul>
           </div>
           <div >

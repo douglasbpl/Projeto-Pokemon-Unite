@@ -56,13 +56,13 @@ export function Header() {
         <S.MenuFixed>
           <img src={logoheader.url} alt="Logo Pokemon Unite" />
           <ul>
-            <AnchorLink to="/#home"><li>{home}</li></AnchorLink>
-            <AnchorLink to="/#Pokémons"><li>{pokemons}</li></AnchorLink>
-            <AnchorLink to="/#maps"><li>{mapas}</li></AnchorLink>
-            <AnchorLink to="/#gameplay"><li>{gameplay}</li></AnchorLink>
+            <li><AnchorLink to="/#home">{home}</AnchorLink></li>
+            <li><AnchorLink to="/#Pokémons">{pokemons}</AnchorLink></li>
+            <li><AnchorLink to="/#maps">{mapas}</AnchorLink></li>
+            <li><AnchorLink to="/#gameplay">{gameplay}</AnchorLink></li>
             <AnchorLink to="/#Contatos"><li>{contato}</li></AnchorLink>
-            <Link to="/pkm"><li>{infopkm}</li></Link>
-            <Link to="/mapas"><li>{infoarena}</li></Link>
+            <li><Link to="/pkm">{infopkm}</Link></li>
+            <li><Link to="/mapas">{infoarena}</Link></li>
           </ul>
         </S.MenuFixed>
       </S.ContainerMenuFixed>
