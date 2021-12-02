@@ -58,7 +58,7 @@ export function Header() {
             <li><Link to="/#Pokémons">{pokemons}</Link></li>
             <li><Link to="/#maps">{mapas}</Link></li>
             <li><Link to="/#gameplay">{gameplay}</Link></li>
-            <Link to="/#Contatos"><li>{contato}</li></Link>
+            <li><Link to="/#Contatos">{contato}</Link></li>
             <li><Link to="/pkm">{infopkm}</Link></li>
             <li><Link to="/mapas">{infoarena}</Link></li>
           </ul>
