@@ -163,9 +163,9 @@ query {
       <S.ContainerMenuFixed>
         <S.MenuFixedPM>
           <ul>
-            <Link to="/" ><li>{pk.home}</li></Link>
-            <Link to="/pkm"><li>{pk.pokemons}</li></Link>
-            <Link to="/mapas"><li>{pk.arenas}</li></Link>
+            <li><Link to="/" >{pk.home}</Link></li>
+            <li><Link to="/pkm">{pk.pokemons}</Link></li>
+            <li><Link to="/mapas">{pk.arenas}</Link></li>
           </ul>
         </S.MenuFixedPM>
       </S.ContainerMenuFixed>
