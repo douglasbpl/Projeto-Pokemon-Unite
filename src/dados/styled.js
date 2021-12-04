@@ -210,7 +210,6 @@ font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 `
 
 export const MapTtlb = styled.h1`
-height: 100px;
 font-size: 50px;
 color:aliceblue;
 padding-top:10vh;
